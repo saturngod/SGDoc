@@ -17,7 +17,7 @@
         "marked": "*"
     },
     "bin": {
-        "SGDoc": "./SGDoc"
+        "sgdoc": "./SGDoc"
     },
     "main": "SGDoc"
 }
