@@ -1,23 +1,23 @@
 {
-    "name":"SGDoc",
-    "description" : "Generate HTML document from Markdown",
-    "version" : "0.5",
+    "name": "SGDoc",
+    "description": "Generate HTML document from Markdown",
+    "version": "0.5",
     "author": "saturngod <me@saturngod.net>",
-    "keywords" : [
+    "keywords": [
         "markdown",
-        "document",
+        "document"
     ],
     "repository": {
-        "type":"git",
+        "type": "git",
         "url": "https://github.com/saturngod/SGDoc.git"
     },
-    "dependencies" : {
-        "cherrio":"*",
-        "highlight.js" : "*",
-        "marked":"*"
+    "dependencies": {
+        "cherrio": "*",
+        "highlight.js": "*",
+        "marked": "*"
     },
-    "bin" : {
-        "apns_test" : "./SGDoc"
+    "bin": {
+        "apns_test": "./SGDoc"
     },
-    "main" : "SGDoc"
+    "main": "SGDoc"
 }
