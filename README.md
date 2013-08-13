@@ -1,5 +1,1 @@
-#SGDoc
-
-Markdown document generator.
-
-##Install    npm install sgdoc -g##Download Template[https://raw.github.com/saturngod/SGDoc/master/template.html](https://raw.github.com/saturngod/SGDoc/master/template.html)##Usages    SGDoc [input markdown] [template] [output file]
+#SGDocMarkdown document generator.##Install    sudo npm install sgdoc -g##Usages###Original Template    sgdoc [input markdown] [output file]###With Your own Template    sgdoc [input markdown] [output file] [template]##MarkdownYou can use markdown code like [Github](https://help.github.com/articles/github-flavored-markdown).###Syntax HiglightSyntax higlight for sgdoc is same like github.Example :	```ruby	require 'redcarpet'	markdown = Redcarpet.new("Hello World!")	puts markdown.to_html	```Will show like```rubyrequire 'redcarpet'markdown = Redcarpet.new("Hello World!")puts markdown.to_html```	##Template	Template is just html file and you must add `{{toc}}` and  `{{docCode}}`###Sample TemplateYou can downlod [original](https://raw.github.com/saturngod/SGDoc/master/template.html) template for reference.
