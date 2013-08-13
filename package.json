@@ -1,7 +1,7 @@
 {
     "name": "sgdoc",
     "description": "Generate HTML document from Markdown",
-    "version": "0.6.2",
+    "version": "0.6.3",
     "author": "saturngod <me@saturngod.net>",
     "keywords": [
         "markdown",
@@ -17,7 +17,7 @@
         "marked": "*"
     },
     "bin": {
-        "sgdoc": "./SGDoc"
+        "sgdoc": "./sgdoc"
     },
-    "main": "SGDoc"
+    "main": "sgdoc"
 }
