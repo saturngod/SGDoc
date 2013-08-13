@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>Your Project</title>
+        <meta charset='utf-8'>
+        <style>
+           body{font-family:Arial;color:#505050;font-size:13px} 
+           h1,h2,h3 {padding-top:5px;} 
+           h1 {font-size:18px;} h2 {font-size:14px ; padding-top:20px; border-top:1px solid #CCC;} h3 {font-size:13px;margin-left:8px; color:#9090AA;padding-bottom:5px;border-bottom:1px solid #CCC;} code {background: #f3f6fb} pre > code {background: #f3f6fb !important;border: 1px solid #dbdde2;}
+            a , a:visited { color:#2badad;text-decoration: none} ul,li {list-style: none} li {padding-top:5px;} ul {padding-left: 20px} #toc > ul{padding: 0px}
+            #toc > h1 {
+                padding: 0px;
+                margin: 0px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+            #toc > ul > a li {
+                color: #9090aa;
+                padding-top: 5px;
+                font-weight: bold;
+                padding-left: 0px;
+            }
+            #toc > ul > ul {
+                padding-left: 0px;
+                padding-top: 5px;
+            }
+            #toc > ul > ul > a li:before {
+                content: "- "
+            }
+            @media all and (min-width: 747) {
+              #toc{
+                width:200px;
+                padding-right: 10px;
+                padding-left: 10px;
+                top:0px;
+                left:0px;
+                position: fixed;
+                overflow-y: auto;     
+                height: 100%         
+            }
+              #content {
+                
+                border-left:1px solid #CCC;
+                padding-left: 20px;
+                padding-right: 5px;
+              }
+              #container {
+                padding-left: 200px;
+                position: relative;
+              }
+            }
+            @media all and (max-width: 747) {
+                #toc {
+                    padding-bottom: 10px;
+                }
+                 #content {
+                
+                border-top:1px solid #CCC;
+                padding-top: 10px;
+                }
+            }
+
+        </style>
+        <link rel='stylesheet' href='http://softwaremaniacs.org/media/soft/highlight/styles/tomorrow.css'>
+</head>
+<body>
+    <div id="container">
+        <div id="toc">
+        <h1>Your Project</h1>
+        <ul><a href='#SGDoc1'><li>SGDoc</li></a><ul><a href='#Install2'><li>Install</li></a><ul></ul><a href='#Usages3'><li>Usages</li></a><ul><a href='#Original Template4'><li>Original Template</li></a><ul></ul><a href='#With Your own Template5'><li>With Your own Template</li></a><ul></ul></ul><a href='#Markdown6'><li>Markdown</li></a><ul><a href='#Syntax Higlight7'><li>Syntax Higlight</li></a><ul></ul><a href='#Syntax Theme8'><li>Syntax Theme</li></a><ul></ul></ul><a href='#Template9'><li>Template</li></a><ul><a href='#Sample Template10'><li>Sample Template</li></a><ul></ul></ul></ul><a href='#MISC11'><li>MISC</li></a><ul><a href='#Inspirations12'><li>Inspirations</li></a><ul></ul><a href='#Changelog13'><li>Changelog</li></a><ul><a href='#Version 0.6.614'><li>Version 0.6.6</li></a><ul></ul></ul><a href='#Acknowledgements15'><li>Acknowledgements</li></a><ul></ul></ul></ul>
+        </div>
+        <div id="content">
+        <a name="SGDoc1"></a><h1 class="h1">SGDoc</h1>
+<p>Markdown document generator.</p>
+<a name="Install2"></a><h2 class="h2">Install</h2>
+<pre><code>su<span class="operator"><span class="keyword">do</span> npm install sgdoc -g</span></code></pre>
+<a name="Usages3"></a><h2 class="h2">Usages</h2>
+<a name="Original Template4"></a><h3 class="h3">Original Template</h3>
+<pre><code><span class="tag">sgdoc</span> <span class="attr_selector">[input markdown]</span> <span class="attr_selector">[output file]</span></code></pre>
+<a name="With Your own Template5"></a><h3 class="h3">With Your own Template</h3>
+<pre><code><span class="tag">sgdoc</span> <span class="attr_selector">[input markdown]</span> <span class="attr_selector">[output file]</span> <span class="attr_selector">[template]</span></code></pre>
+<a name="Markdown6"></a><h2 class="h2">Markdown</h2>
+<p>You can use markdown code like <a href="https://help.github.com/articles/github-flavored-markdown">Github</a>.</p>
+<a name="Syntax Higlight7"></a><h3 class="h3">Syntax Higlight</h3>
+<p>Syntax higlight for sgdoc is same like github.</p>
+<p>Example :</p>
+<pre><code>`<span class="javascript"></span>``<span class="javascript">ruby
+require <span class="string">'redcarpet'</span>
+markdown = Redcarpet.<span class="keyword">new</span>(<span class="string">"Hello World!"</span>)
+puts markdown.to_html
+</span>``<span class="javascript"></span>`</code></pre>
+<p>Will show like</p>
+<pre><code class="lang-ruby"><span class="title">require</span><span class="string"> 'redcarpet'</span>
+<span class="title">markdown</span> = <span class="type">Redcarpet</span>.new(<span class="string">"Hello World!"</span>)
+<span class="title">puts</span> markdown.to_html</code></pre>
+<a name="Syntax Theme8"></a><h3 class="h3">Syntax Theme</h3>
+<p>sgdoc is using <a href="http://softwaremaniacs.org/soft/highlight/en/">highlight.js</a>. You can check syntax highligh theme from <a href="http://softwaremaniacs.org/media/soft/highlight/test.html">demo</a> page.</p>
+<a name="Template9"></a><h2 class="h2">Template</h2>
+<p>Template is just html file and you must add <code><span class="variable">{{toc}}</span></code> and  <code><span class="variable">{{docCode}}</span></code></p>
+<a name="Sample Template10"></a><h3 class="h3">Sample Template</h3>
+<p>You can downlod <a href="https://raw.github.com/saturngod/SGDoc/master/template.html">original</a> template for reference.</p>
+<a name="MISC11"></a><h1 class="h1">MISC</h1>
+<a name="Inspirations12"></a><h2 class="h2">Inspirations</h2>
+<p><a href="http://ricostacruz.com/flatdoc/">Flatdoc</a> have inspired <strong>SGDoc</strong>. Original template design are base on Flatdoc&#39;s theme-white CSS.</p>
+<a name="Changelog13"></a><h2 class="h2">Changelog</h2>
+<a name="Version 0.6.614"></a><h3 class="h3">Version 0.6.6</h3>
+<ul>
+<li>First Publish release.</li>
+</ul>
+<a name="Acknowledgements15"></a><h2 class="h2">Acknowledgements</h2>
+<p><strong>SGDoc</strong> is authored and maintained by <a href="http://en.saturngod.net">Saturngod</a>.
+Released under the <a href="http://opensource.org/licenses/mit-license.php">MIT License</a>.</p>
+
+        </div>
+    </div>
+</body>
+</html>
