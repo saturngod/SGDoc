@@ -1,7 +1,7 @@
 {
     "name": "sgdoc",
     "description": "Generate HTML document from Markdown",
-    "version": "0.6.0",
+    "version": "0.6.1",
     "author": "saturngod <me@saturngod.net>",
     "keywords": [
         "markdown",
@@ -12,7 +12,7 @@
         "url": "https://github.com/saturngod/SGDoc.git"
     },
     "dependencies": {
-        "cherrio": "*",
+        "cheerio": "*",
         "highlight.js": "*",
         "marked": "*"
     },
