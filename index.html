@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Your Project</title>
+        <title>SGDoc</title>
         <meta charset='utf-8'>
         <style>
            body{font-family:Arial;color:#505050;font-size:13px} 
@@ -65,22 +65,24 @@
 <body>
     <div id="container">
         <div id="toc">
-        <h1>Your Project</h1>
-        <ul><a href='#SGDoc1'><li>SGDoc</li></a><ul><a href='#Install2'><li>Install</li></a><ul></ul><a href='#Usages3'><li>Usages</li></a><ul><a href='#Original Template4'><li>Original Template</li></a><ul></ul><a href='#With Your own Template5'><li>With Your own Template</li></a><ul></ul></ul><a href='#Markdown6'><li>Markdown</li></a><ul><a href='#Syntax Higlight7'><li>Syntax Higlight</li></a><ul></ul><a href='#Syntax Theme8'><li>Syntax Theme</li></a><ul></ul></ul><a href='#Template9'><li>Template</li></a><ul><a href='#Sample Template10'><li>Sample Template</li></a><ul></ul></ul></ul><a href='#MISC11'><li>MISC</li></a><ul><a href='#Inspirations12'><li>Inspirations</li></a><ul></ul><a href='#Changelog13'><li>Changelog</li></a><ul><a href='#Version 0.6.614'><li>Version 0.6.6</li></a><ul></ul></ul><a href='#Acknowledgements15'><li>Acknowledgements</li></a><ul></ul></ul></ul>
+        <h1>SGDoc</h1>
+        <ul><a href='#SGDoc1'><li>SGDoc</li></a><ul><a href='#Install2'><li>Install</li></a><ul></ul><a href='#Source3'><li>Source</li></a><ul></ul><a href='#Usages4'><li>Usages</li></a><ul><a href='#Original Template5'><li>Original Template</li></a><ul></ul><a href='#With Your own Template6'><li>With Your own Template</li></a><ul></ul></ul><a href='#Markdown7'><li>Markdown</li></a><ul><a href='#Syntax Higlight8'><li>Syntax Higlight</li></a><ul></ul><a href='#Syntax Theme9'><li>Syntax Theme</li></a><ul></ul></ul><a href='#Template10'><li>Template</li></a><ul><a href='#Sample Template11'><li>Sample Template</li></a><ul></ul></ul></ul><a href='#MISC12'><li>MISC</li></a><ul><a href='#Inspirations13'><li>Inspirations</li></a><ul></ul><a href='#Changelog14'><li>Changelog</li></a><ul><a href='#Version 0.6.615'><li>Version 0.6.6</li></a><ul></ul></ul><a href='#Acknowledgements16'><li>Acknowledgements</li></a><ul></ul></ul></ul>
         </div>
         <div id="content">
         <a name="SGDoc1"></a><h1 class="h1">SGDoc</h1>
 <p>Markdown document generator.</p>
 <a name="Install2"></a><h2 class="h2">Install</h2>
 <pre><code>su<span class="operator"><span class="keyword">do</span> npm install sgdoc -g</span></code></pre>
-<a name="Usages3"></a><h2 class="h2">Usages</h2>
-<a name="Original Template4"></a><h3 class="h3">Original Template</h3>
+<a name="Source3"></a><h2 class="h2">Source</h2>
+<p>You can check source code at <a href="https://github.com/saturngod/SGDoc">github</a>.</p>
+<a name="Usages4"></a><h2 class="h2">Usages</h2>
+<a name="Original Template5"></a><h3 class="h3">Original Template</h3>
 <pre><code><span class="tag">sgdoc</span> <span class="attr_selector">[input markdown]</span> <span class="attr_selector">[output file]</span></code></pre>
-<a name="With Your own Template5"></a><h3 class="h3">With Your own Template</h3>
+<a name="With Your own Template6"></a><h3 class="h3">With Your own Template</h3>
 <pre><code><span class="tag">sgdoc</span> <span class="attr_selector">[input markdown]</span> <span class="attr_selector">[output file]</span> <span class="attr_selector">[template]</span></code></pre>
-<a name="Markdown6"></a><h2 class="h2">Markdown</h2>
+<a name="Markdown7"></a><h2 class="h2">Markdown</h2>
 <p>You can use markdown code like <a href="https://help.github.com/articles/github-flavored-markdown">Github</a>.</p>
-<a name="Syntax Higlight7"></a><h3 class="h3">Syntax Higlight</h3>
+<a name="Syntax Higlight8"></a><h3 class="h3">Syntax Higlight</h3>
 <p>Syntax higlight for sgdoc is same like github.</p>
 <p>Example :</p>
 <pre><code>`<span class="javascript"></span>``<span class="javascript">ruby
@@ -92,21 +94,21 @@ puts markdown.to_html
 <pre><code class="lang-ruby"><span class="title">require</span><span class="string"> 'redcarpet'</span>
 <span class="title">markdown</span> = <span class="type">Redcarpet</span>.new(<span class="string">"Hello World!"</span>)
 <span class="title">puts</span> markdown.to_html</code></pre>
-<a name="Syntax Theme8"></a><h3 class="h3">Syntax Theme</h3>
+<a name="Syntax Theme9"></a><h3 class="h3">Syntax Theme</h3>
 <p>sgdoc is using <a href="http://softwaremaniacs.org/soft/highlight/en/">highlight.js</a>. You can check syntax highligh theme from <a href="http://softwaremaniacs.org/media/soft/highlight/test.html">demo</a> page.</p>
-<a name="Template9"></a><h2 class="h2">Template</h2>
+<a name="Template10"></a><h2 class="h2">Template</h2>
 <p>Template is just html file and you must add <code><span class="variable">{{toc}}</span></code> and  <code><span class="variable">{{docCode}}</span></code></p>
-<a name="Sample Template10"></a><h3 class="h3">Sample Template</h3>
+<a name="Sample Template11"></a><h3 class="h3">Sample Template</h3>
 <p>You can downlod <a href="https://raw.github.com/saturngod/SGDoc/master/template.html">original</a> template for reference.</p>
-<a name="MISC11"></a><h1 class="h1">MISC</h1>
-<a name="Inspirations12"></a><h2 class="h2">Inspirations</h2>
+<a name="MISC12"></a><h1 class="h1">MISC</h1>
+<a name="Inspirations13"></a><h2 class="h2">Inspirations</h2>
 <p><a href="http://ricostacruz.com/flatdoc/">Flatdoc</a> have inspired <strong>SGDoc</strong>. Original template design are base on Flatdoc&#39;s theme-white CSS.</p>
-<a name="Changelog13"></a><h2 class="h2">Changelog</h2>
-<a name="Version 0.6.614"></a><h3 class="h3">Version 0.6.6</h3>
+<a name="Changelog14"></a><h2 class="h2">Changelog</h2>
+<a name="Version 0.6.615"></a><h3 class="h3">Version 0.6.6</h3>
 <ul>
 <li>First Publish release.</li>
 </ul>
-<a name="Acknowledgements15"></a><h2 class="h2">Acknowledgements</h2>
+<a name="Acknowledgements16"></a><h2 class="h2">Acknowledgements</h2>
 <p><strong>SGDoc</strong> is authored and maintained by <a href="http://en.saturngod.net">Saturngod</a>.
 Released under the <a href="http://opensource.org/licenses/mit-license.php">MIT License</a>.</p>
 
