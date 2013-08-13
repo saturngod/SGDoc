@@ -5,10 +5,20 @@ var marked = require( "marked" );
 var hljs = require('highlight.js');
 var cheerio = require('cheerio');
 
-if(process.argv.length!=5) {
+var template = "";
+
+if(process.argv.length < 4 || process.argv.length > 5) {
     console.info("Command :");
-    console.info("SGDoc [input markdown] [template] [output file]");
+    console.info("SGDoc [input markdown] [output file] [template] ");
     return;    
+}
+
+if(process.argv.length==4)
+{
+    template = __dirname + "/template.html";
+}
+else {
+    template = process.argv[4];   
 }
 
 var filename = process.argv[2];
@@ -82,12 +92,12 @@ list +="</ul>";
 
 docCode = $.html();
 
-var template = process.argv[3];
 
-var template = fs.readFileSync(template,"utf8");
+
+template = fs.readFileSync(template,"utf8");
 template = template.replace("{{docCode}}",docCode);
 template = template.replace("{{toc}}",list);
 
-var outputFileName = process.argv[4];
+var outputFileName = process.argv[3];
 
 fs.writeFileSync(outputFileName,template,"utf8");

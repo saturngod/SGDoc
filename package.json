@@ -1,7 +1,7 @@
 {
     "name": "sgdoc",
     "description": "Generate HTML document from Markdown",
-    "version": "0.6.1",
+    "version": "0.6.2",
     "author": "saturngod <me@saturngod.net>",
     "keywords": [
         "markdown",
